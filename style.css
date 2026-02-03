@@ -22,10 +22,10 @@ body {
 
 .profile img {
     width: 180px;
-    border-radius: 50%;
     margin-bottom: 15px;
     border: 4px solid white;
 }
+
 
 .profile p {
     max-width: 500px;
