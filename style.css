@@ -1,0 +1,102 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Body */
+body {
+    background-color: #e8f0fe;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #1a73e8;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.profile img {
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 4px solid white;
+}
+
+.profile p {
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 1.5;
+}
+
+/* Main container using Flexbox */
+.container {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect (Bonus) */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card h2 {
+    margin-bottom: 10px;
+    color: #1a73e8;
+}
+
+.card ul {
+    list-style: none;
+}
+
+.card ul li {
+    padding: 6px 0;
+}
+
+/* Links */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #1a73e8;
+    color: white;
+    margin-top: 30px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .profile img {
+        width: 140px;
+    }
+}
