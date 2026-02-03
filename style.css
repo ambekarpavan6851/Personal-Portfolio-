@@ -1,105 +1,111 @@
+/* Basic Clean Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
-    background: linear-gradient(135deg, #eef4ff, #f9fbff);
-    color: #222;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f7;
+    padding-bottom: 40px;
 }
 
-/* Header */
+/* Header Styling */
 .header {
+    background-color: #fff;
     padding: 40px 20px;
-    background: #1a73e8;
-    color: white;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    background-color: rgba(165, 42, 42, 0.623);
 }
 
 .header-content {
-    max-width: 1100px;
-    margin: auto;
-    display: flex;
-    align-items: flex-start; /* better for portfolio */
-    gap: 30px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .header img {
-    .header img {
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    width: 120px;              /* SMALL & CLEAN */
-    height: 120px;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 24px;
     object-fit: cover;
-    border-radius: 20px;       /* ROUND BORDER (NOT CIRCLE) */
-    border: 3px solid #ffffff;
-    flex-shrink: 0;
 }
 
-/* Main layout */
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.header p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Main Container */
 .container {
-    max-width: 1100px;
-    margin: 40px auto;
+    max-width: 800px;
+    margin: 0 auto;
     padding: 0 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-/* Cards */
+/* Card Component */
 .card {
-    background: white;
-    padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .card h2 {
-    color: #1a73e8;
-    margin-bottom: 15px;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: #222;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
 }
 
+/* List Styling */
 .card ul {
-    padding-left: 18px;
+    list-style-position: inside;
+    padding-left: 10px;
 }
 
-.card li {
+.card ul li {
     margin-bottom: 8px;
 }
 
-.card a {
-    color: #1a73e8;
+/* Links */
+a {
+    color: #0070f3;
     text-decoration: none;
+    font-weight: 500;
 }
 
-.card a:hover {
+a:hover {
     text-decoration: underline;
 }
 
-/* Footer */
+/* Footer Styling */
 .footer {
-    background: #1a73e8;
-    color: white;
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
+    margin-top: 60px;
+    color: #888;
+    font-size: 0.9rem;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .header-content {
-        align-items: center;
-    }
-
-    .header img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
