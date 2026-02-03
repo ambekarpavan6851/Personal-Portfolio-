@@ -21,7 +21,7 @@ body {
     max-width: 1100px;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* better for portfolio */
     gap: 30px;
 }
 
