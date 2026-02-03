@@ -1,211 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Pavan R Ambekar | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <a href="#" class="logo">Portfolio.</a>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </div>
+<header class="header">
+    <div class="header-content">
+        <img src="profile.jpeg" alt="Pavan R Ambekar">
+        <div>
+            <h1>Pavan R Ambekar</h1>
+            <p>
+                Engineering student with strong interest in <b>Web Development</b>,
+                Computer Architecture, Embedded Systems, and Software Development.
+            </p>
         </div>
-    </nav>
+    </div>
+</header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container hero-content">
-            <div class="hero-text">
-                <h3>Hello, I'm</h3>
-                <h1>John Doe</h1>
-                <h3>And I'm a <span class="highlight">Frontend Developer</span></h3>
-                <p>I build modern, responsive, and user-friendly websites with a focus on seamless user experience.</p>
-                <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-                <a href="#contact" class="btn">Here's My Resume</a>
-            </div>
-            <div class="hero-img">
-                <!-- Placeholder for user image or illustration -->
-                <div class="img-placeholder">
-                    <i class="fas fa-user-circle"></i>
-                </div>
-            </div>
-        </div>
+<main class="container">
+
+    <section class="card">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS (Responsive Web Design)</li>
+            <li>Web Development Fundamentals</li>
+            <li>C++, Python, Basics of C</li>
+            <li>Linux, Git & GitHub</li>
+            <li>Computer Architecture & Embedded Systems</li>
+        </ul>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About <span>Me</span></h2>
-            <div class="about-content">
-                <div class="about-img">
-                    <div class="img-placeholder">
-                        <i class="fas fa-code"></i>
-                    </div>
-                </div>
-                <div class="about-text">
-                    <h3>Frontend Developer & UI/UX Designer</h3>
-                    <p>I am a passionate web developer with experience in creating responsive websites. I love to learn
-                        new technologies and improve my skills. I am dedicated to delivering high-quality work that
-                        meets the needs of my clients.</p>
-                    <a href="#" class="btn">Read More</a>
-                </div>
-            </div>
-        </div>
+    <section class="card">
+        <h2>Projects</h2>
+        <ul>
+            <li><b>L1/L2 Cache Simulator</b> – C++</li>
+            <li><b>Bytecode Virtual Machine</b> – C++</li>
+            <li><b>FPGA Image Processing</b> – Verilog</li>
+            <li><b>Industrial Protection System</b> – STM32</li>
+        </ul>
     </section>
 
-    <!-- Experience Section (Referencing Link 1 style) -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">My <span>Experience</span></h2>
-
-            <div class="timeline">
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="date">2023 - Present</div>
-                        <h3>Senior Frontend Developer</h3>
-                        <h4>Tech Solutions Inc.</h4>
-                        <p>Leading the frontend team, developing scalable web applications using React and Next.js.
-                            Mentoring junior developers and conducting code reviews.</p>
-                    </div>
-                </div>
-                <div class="timeline-item right">
-                    <div class="timeline-content">
-                        <div class="date">2021 - 2023</div>
-                        <h3>Web Developer</h3>
-                        <h4>Creative Agency</h4>
-                        <p>Collaborated with designers to implement pixel-perfect user interfaces. Optimized websites
-                            for maximum speed and scalability.</p>
-                    </div>
-                </div>
-                <div class="timeline-item left">
-                    <div class="timeline-content">
-                        <div class="date">2020 - 2021</div>
-                        <h3>Junior Developer</h3>
-                        <h4>StartUp Hub</h4>
-                        <p>Maintained existing codebases and fixed bugs. Assisted in the development of new features and
-                            internal tools.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="card">
+        <h2>Education</h2>
+        <p><b>B.E. Electronics & Instrumentation</b></p>
+        <p>Dayananda Sagar College of Engineering</p>
+        <p>CGPA: 8.53 (2022 – 2026)</p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Latest <span>Projects</span></h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>E-Commerce Website</h3>
-                        <p>A fully functional online store with cart and checkout features.</p>
-                        <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> View</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Portfolio App</h3>
-                        <p>A mobile-first portfolio application showcasing creative work.</p>
-                        <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> View</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-img">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-info">
-                        <h3>Dashboard UI</h3>
-                        <p>An analytics dashboard for tracking user data and metrics.</p>
-                        <a href="#" class="btn-small"><i class="fas fa-external-link-alt"></i> View</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="card">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:pavanambekar2004@gmail.com">pavanambekar2004@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/pavan6851" target="_blank">github.com/pavan6851</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/pavan-r-ambekar" target="_blank">linkedin.com/in/pavan-r-ambekar</a></p>
     </section>
 
-    <!-- Contact Section (Referencing Link 2 style) -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact <span>Me</span></h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <h4>Phone</h4>
-                        <p>+123 456 7890</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <h4>Email</h4>
-                        <p>email@example.com</p>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h4>Address</h4>
-                        <p>123 Street, City, Country</p>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <div class="input-box">
-                        <input type="text" placeholder="Full Name" required>
-                        <input type="email" placeholder="Email Address" required>
-                    </div>
-                    <div class="input-box">
-                        <input type="number" placeholder="Mobile Number">
-                        <input type="text" placeholder="Email Subject">
-                    </div>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="btn">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
+</main>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-text">
-                <p>Copyright &copy; 2026 by Portfolio | All Rights Reserved.</p>
-            </div>
-            <div class="footer-iconTop">
-                <a href="#home"><i class="fas fa-arrow-up"></i></a>
-            </div>
-        </div>
-    </footer>
+<footer class="footer">
+    <p>© 2026 Pavan R Ambekar</p>
+</footer>
 
 </body>
-
 </html>
