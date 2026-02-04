@@ -11,9 +11,11 @@
 <body>
 
     <header class="header">
+        <!-- Theme toggle button -->
+        <button id="theme-toggle" class="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
         <div class="header-content">
             <center>
-                <img src="profile.jpeg" alt="Pavan R Ambekar" height="300px" width="300px">
+                <img src="profile67.jpeg" alt="Pavan R Ambekar" height="300px" width="300px">
             </center>
             <div>
                 <h1>Pavan R Ambekar</h1>
@@ -21,13 +23,21 @@
                     Engineering student with strong interest in Web Development,
                     Computer Architecture, Embedded Systems, and Software Development.
                 </p>
+
+                <!-- In-page navigation placed below description -->
+                <nav class="main-nav" aria-label="Main">
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#education">Education</a>
+                    <a href="#contact">Contact</a>
+                </nav>
             </div>
         </div>
     </header>
 
     <main class="container">
 
-        <section class="card">
+        <section id="skills" class="card">
             <h2>Skills</h2>
             <ul>
                 <li>HTML, CSS, JavaScript</li>
@@ -37,7 +47,7 @@
             </ul>
         </section>
 
-        <section class="card">
+        <section id="projects" class="card">
             <h2>Projects</h2>
             <ul>
                 <li><b>L1/L2 Cache Simulator</b> – C++</li>
@@ -47,14 +57,18 @@
             </ul>
         </section>
 
-        <section class="card">
+        <section id="education" class="card">
             <h2>Education</h2>
             <p><b>B.E. Electronics & Instrumentation</b></p>
             <p>Dayananda Sagar College of Engineering</p>
             <p>CGPA: 8.53 (2022 – 2026)</p>
+            <br>
+            <p><b>PUC</b></p>
+            <p>ASC PU COLLEGE</p>
+            <p>Marks 90.5 (2020 – 2022)</p>
         </section>
 
-        <section class="card">
+        <section id="contact" class="card">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:pavanambekar2004@gmail.com">pavanambekar2004@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/pavan6851" target="_blank">github.com/pavan6851</a></p>
@@ -68,6 +82,7 @@
         <p>© 2026 Pavan R Ambekar</p>
     </footer>
 
+    <script src="theme.js" defer></script>
 </body>
 
 </html>
